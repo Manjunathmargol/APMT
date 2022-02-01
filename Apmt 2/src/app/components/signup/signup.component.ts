@@ -9,14 +9,14 @@ import { MustMatch } from './passwordMatch';
 })
 export class SignupComponent implements OnInit {
   registerForm!: FormGroup;
-    submitted = false;
+  submitted = false;
 
-  constructor(private formBuilder: FormBuilder , private router: Router,) { }
+  constructor(private formBuilder: FormBuilder, private router: Router,) { }
 
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
-     
+
       username: ['', Validators.required],
       // lastName: ['', Validators.required],
       // validates date format yyyy-mm-dd
@@ -25,9 +25,9 @@ export class SignupComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', Validators.required],
       // acceptTerms: [false, Validators.requiredTrue]
-  }, {
-       validator: MustMatch('password', 'confirmPassword')
-  });
+    }, {
+      validator: MustMatch('password', 'confirmPassword')
+    });
   }
 
   get f() { return this.registerForm.controls; }
@@ -37,13 +37,17 @@ export class SignupComponent implements OnInit {
 
     // stop here if form is invalid
     if (this.registerForm.invalid) {
-        return;
+      return;
     }
 
     // display form values on success
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
-}
+  }
+  gender = null;
+  onSave() {
 
+
+  }
 
 
 }
