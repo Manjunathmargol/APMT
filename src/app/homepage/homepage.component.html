@@ -1,0 +1,248 @@
+<div class="background-image">
+    <h1></h1>
+    <div class="AddButton">
+    <button type="button" class="btn btn-secondary">Projects
+       <a routerLink="/projects"  routerLinkActive="active" > <button type="button" class="btn btn-success">Buy</button></a>
+       <a routerLink="/uploader"  routerLinkActive="active" > <button type="button" class="btn btn-warning">sell</button></a>
+      <!-- <a href=""><button type="button" class="btn btn-warning">Sell</button></a> -->
+    </button>
+<button type="button" class="btn btn-secondary">Books
+
+   <a routerLink="/books"  routerLinkActive="active"  > <button type="button" class="btn btn-success">Buy</button></a>
+   <a routerLink="/uploader"  routerLinkActive="active" > <button type="button" class="btn btn-warning">sell</button></a>
+   <!-- <a href="">  <button type="button" class="btn btn-warning">Sell</button></a> -->
+</button>
+<button type="button" class="btn btn-secondary"> Articles
+
+    <a routerLink="/experiments"  routerLinkActive="active"     > <button type="button" class="btn btn-success">Buy</button></a>
+    <a routerLink="/uploader"  routerLinkActive="active" > <button type="button" class="btn btn-warning">sell</button></a>
+    <!-- <a href="">  <button type="button" class="btn btn-warning">Sell</button></a> -->
+</button>
+</div>
+</div>
+<section class="wrapper">
+    <div class="container-fostrap">
+        <div>
+
+            <h1 class="heading">
+                Academic projects 
+            </h1>
+        </div>
+
+        <div class="content" >
+            <div class="container">
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-3"   *ngFor="let project of projects.slice(0,4);" >
+                        <div class="card"  >
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                            <img src= {{project.imageUrl}}
+                             />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"> {{project.name}}
+                                  </a>
+                                </h4>
+                                <!-- <p class="" >
+                                   {{project.description}}
+                                </p> -->
+                            </div>
+                            <div class="card-read-more">
+                                <a routerLink="/project-details" class="btn btn-link btn-block">
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+<a routerLink="/projects"  routerLinkActive="active" class="btn btn-secondary" role="button" aria-pressed="true" style="float: right; margin-right: 65px;">View all</a>
+
+
+<section class="wrapper">
+    <div class="container-fostrap">
+        <div>
+            
+            <h1 class="heading">
+                books 
+            </h1>
+        </div>
+
+    
+            
+                    <div class="container d-flex justify-content-center mt-50 mb-50">
+                        <div class="row">
+                            <div class="col-md-3 mt-2" >
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-img-actions"> <img src="https://images-na.ssl-images-amazon.com/images/I/91t+7QSEtYL.jpg" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                                    </div>
+                                    <div class="card-body bg-light text-center">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">ENGINEERING</a> </h6> <a href="#" class="text-muted" data-abc="true">Books & Notes</a>
+                                        </div>
+                                        <div > <button type="button" class="btn bg-cart">View More</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-img-actions"> <img src="https://images-na.ssl-images-amazon.com/images/I/41ZN1bjR5fL._SX368_BO1,204,203,200_.jpg" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                                    </div>
+                                    <div class="card-body bg-light text-center">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">COMPUTER SCIENCE & IT</a> </h6> <a href="#" class="text-muted" data-abc="true">Books & Notes</a>
+                                        </div>
+                                        
+                                        
+                                        <div > <button type="button" class="btn bg-cart">View More</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="col-md-3 mt-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-img-actions"> <img src="https://rukminim1.flixcart.com/image/416/416/regionalbooks/f/t/g/bhagavad-gita-yatharupa-pocket-book-original-imaecrk4gyahnhya.jpeg?q=70" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                                    </div>
+                                    <div class="card-body bg-light text-center">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">BHAGAVAD-GITA</a> </h6> <a href="#" class="text-muted" data-abc="true">Books & Notes</a>
+                                        </div>
+                                       
+                                        
+                                        <div > <button type="button" class="btn bg-cart">View More</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        
+
+        
+
+
+        
+    </div>
+</section>
+<a routerLink="/books"  routerLinkActive="active"   class="btn btn-secondary" role="button" aria-pressed="true" style="float: right; margin-right: 65px;">View all</a>
+<br><br><br>
+
+<section class="wrapper">
+    <div class="container-fostrap">
+        <div>
+             
+             <h1 class="heading">
+                Articles
+            </h1>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="card">
+                            <a class="img-card" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0dAvk7yQ57U43b8UHJLVsJo9vNOnfiTarUQ&usqp=CAU">
+                            <img src="http://www.olabs.edu.in/userfiles/3/image/Class12/physics/new/Spectrometer-prism.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"> Spectrometer	
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a routerLink="/details" class="btn btn-link btn-block">
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="card">
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                            <img src="http://www.olabs.edu.in/userfiles/3/image/Class12/physics/new/AC-sonometer.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html">AC-sonometer</a>
+                                </h4>
+                                <p class="">
+                                    
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a  routerLink="/details" class="btn btn-link btn-block">
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="card">
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                            <img src="http://www.olabs.edu.in/userfiles/3/image/Class12/physics/new/Zener-Diode.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">Zener-Diode
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a  routerLink="/details" class="btn btn-link btn-block"> 
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="card">
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
+                            <img src="http://www.olabs.edu.in/userfiles/3/image/Class12/physics/new/Ohms-Law.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html"> Ohms-Law
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a  routerLink="/details" class="btn btn-link btn-block">
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+
+                    
+                
+    </div>
+</section>
+<a routerLink="/experiments"  routerLinkActive="active"   class="btn btn-secondary" role="button" aria-pressed="true" style="float: right; margin-right: 65px;">View all</a>
+<br><br><br>
+
+

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+// Prevent dropdown menu from closing when click inside the form
+$(document).on("click", ".action-buttons .dropdown-menu", function(e){
+	e.stopPropagation();
+});
+</script>
+</head> 
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a routerLink="/home"  routerLinkActive="active"  class="navbar-brand"><i class="fa fa-buysellads" aria-hidden="true"></i> APMT</a>  		
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<div class="navbar-nav">
+			<a routerLink=""  routerLinkActive="active" class="nav-item nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+			<a  routerLink="/footer" routerLinkActive="active"  class="nav-item nav-link">About</a>			
+		
+            <div class="dropdown">
+              <a routerLink="/home"  routerLinkActive="active"  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Category</a>
+              <div class="dropdown-content">
+                
+                  <div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Buy</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/projects"  routerLinkActive="active">Projects</a>
+                      <a routerLink="/books"  routerLinkActive="active"  >Books</a>
+                      <a href="#">Articles</a>
+                    </div>
+                  </div>
+                
+                
+                  <div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Sell</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/uploader"  routerLinkActive="active">Upload Details</a>
+                      <!-- <a href="#">Projects</a> -->
+                      <!-- <a href="#">Books</a> -->
+                      <!-- <a href="#">Articles</a> -->
+                    </div>
+                  </div>
+
+                 </div>
+                 </div>
+
+		   <div class="dropdown">
+			 <a routerLink="/projects" routerLinkActive="active"  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Projects</a>
+			  <div class="dropdown-content">
+				<div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Frontend</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/projects"  routerLinkActive="active">Angular</a>
+					  <a routerLink="/projects"  routerLinkActive="active">React</a>
+                      <a routerLink="/projects"  routerLinkActive="active">Vue</a>
+                    </div>
+                  </div>
+
+				  <div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Backend</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/projects"  routerLinkActive="active">Php</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Python</a>
+                      <a routerLink="/projects"  routerLinkActive="active">Django</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Laravel</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Spring Boot</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Flask</a>
+					  <a routerLink="/projects"  routerLinkActive="active">MySQL</a>
+					  <a routerLink="/projects"  routerLinkActive="active">C++</a>
+                    </div>
+                  </div>
+
+				  <div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Data science</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/projects"  routerLinkActive="active">Artificial Intelligence</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Cloud Services</a>
+                      <a routerLink="/projects"  routerLinkActive="active">IoT</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Big Data</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Quantum Computing</a>
+					  <a routerLink="/projects"  routerLinkActive="active">Digital Twins</a>
+                    </div>
+                  </div>
+				    
+              </div>
+		      </div>
+
+			<div class="dropdown">
+			 <a routerLink="/books"  routerLinkActive="active" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Books</a>
+			 <div class="dropdown-content">
+				
+				<a  routerLink="/books"   class="nav-item nav-link ">SSLC</a>
+                   
+
+				  <div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">PUC</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/books"  routerLinkActive="active">First Year</a>
+					  <a routerLink="/books"  routerLinkActive="active">Second Year</a>
+                      
+                    </div>
+                  </div>
+				  <div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Degree</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/books"  routerLinkActive="active">Bachelor of Arts</a>
+					  <a routerLink="/books"  routerLinkActive="active">Bachelor of Science.</a>
+                      <a routerLink="/books"  routerLinkActive="active">Bachelor of Commerce</a>
+					  <a routerLink="/books"  routerLinkActive="active">Bachelor of Engg./Tech</a>
+					  <a routerLink="/books"  routerLinkActive="active">BMS/BBA/BBS</a>
+					  <a routerLink="/books"  routerLinkActive="active">Bachelor of Law</a>
+					  <a routerLink="/books"  routerLinkActive="active">Bachelor of Medicine (MBBS)</a>
+                    </div>
+                  </div>
+				  <div class="dropdown-submenu">
+                    <a  data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Master Degree</a>
+                    <div  class="dropdown-menu">
+                      <a routerLink="/books"  routerLinkActive="active">Master of Arts (MA)</a>
+					  <a routerLink="/books"  routerLinkActive="active">Master of Science (MS, MSc) </a>
+                      <a routerLink="/books"  routerLinkActive="active">Master of Science in Computer Science </a>
+					  <a routerLink="/books"  routerLinkActive="active">Master of Science in Nursing</a>
+					  <a routerLink="/books"  routerLinkActive="active">Master of Business Administration (MBA)</a>
+					  <a routerLink="/books"  routerLinkActive="active">Master of Engineering Management</a>
+                    </div>
+                  </div>
+				  <a  routerLink="/books"   class="nav-item nav-link ">Story</a>
+				
+				</div>
+			   </div>
+
+             <a routerLink="/experiments"  routerLinkActive="active"  class="nav-item nav-link">Articles</a>
+             </div>
+
+		<form class="navbar-form form-inline">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search Projects here...">
+				<div class="input-group-append">
+					<span class="input-group-text">
+						<i class="material-icons">&#xE8B6;</i>
+					</span>
+				</div>
+			</div>
+      </form>
+
+		<div class="navbar-nav ml-auto action-buttons" > <a routerLink="/cart" ><i class="fas fa-shopping-cart" style="padding: 8px; width: 35px;"></i></a> 
+			<div class="nav-item dropdown" >
+				<a routerLink="/login"  routerLinkActive="active" data-toggle="dropdown" class="btn btn-primary dropdown-toggle sign-up-btn">Login</a>
+        </div>
+
+			<div class="nav-item dropdown">
+				<a routerLink="/signup"  routerLinkActive="active" data-toggle="dropdown" class="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
+            </div>
+
+
+        </div>
+	</div>
+</nav>
+</body>
+</html>
