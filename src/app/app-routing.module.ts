@@ -12,6 +12,10 @@ import { UploaderComponent } from './layout/uploader/uploader.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CartComponent } from './cart/cart.component';
 import { ExperimentsComponent } from './layout/experiments/experiments.component';
+<<<<<<< HEAD
+=======
+import { AboutComponent } from './about/about.component';
+>>>>>>> a67e40f (about component added)
 
 const routes: Routes = [
 
@@ -26,7 +30,12 @@ const routes: Routes = [
 { path:'project-details', component:ProjectDetailsComponent },
 { path:'article-details', component:ArticleDetailsComponent },
 { path:'uploader', component:UploaderComponent },
+<<<<<<< HEAD
 { path:'cart', component:CartComponent }
+=======
+{ path:'cart', component:CartComponent },
+{ path:'about', component:AboutComponent}
+>>>>>>> a67e40f (about component added)
 ];
 
 @NgModule({

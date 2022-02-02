@@ -31,6 +31,10 @@ chrome-profiler-events*.json
 .history/*
 
 # misc
+<<<<<<< HEAD
+=======
+/.angular/cache
+>>>>>>> a67e40f (about component added)
 /.sass-cache
 /connect.lock
 /coverage

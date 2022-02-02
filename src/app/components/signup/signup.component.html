@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,3 +131,62 @@
 </body>
 
 </html>
+=======
+
+<body>
+<div class="signup-form">	
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+		<h2>Create Account</h2>
+		<p class="lead"></p>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="username" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+				<div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+					<div *ngIf="f.username.errors.required"> username is required</div>
+				</div>
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+				<input type="email" class="form-control" name="email" placeholder="Email"formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+				<div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+					<div *ngIf="f.email.errors.required">Email is required</div>
+					<div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+				</div>
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				<input type="text" class="form-control" name="password" placeholder="Password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+				<div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+					<div *ngIf="f.password.errors.required">Password is required</div>
+					<div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+				</div>
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-lock"></i>
+					<i class="fa fa-check"></i>
+				</span>
+				<input type="text" class="form-control" name="confirm_password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+				<div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+					<div *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+					<!-- <div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div> -->
+				</div>
+			</div>
+        </div>        
+		<div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+        </div>
+		<p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
+    </form>
+	<div class="text-center">Already have an account? <a routerLink="/login"  routerLinkActive="active">Login here</a>.</div>
+</div>
+</body>
+<!-- </html> -->
+>>>>>>> a67e40f (about component added)
