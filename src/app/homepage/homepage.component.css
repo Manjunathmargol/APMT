@@ -26,10 +26,9 @@ margin:4px;
  
 .AddButton{
   float: right;
-  height: 700px;
-  display: flex;
-  justify-content: center;
+  display: block;
   align-items: center;
+  margin-top: 40vh;
 }
 .wrapper {
   display: table;
