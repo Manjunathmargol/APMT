@@ -19,11 +19,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { CartComponent } from './cart/cart.component';
 import { ExperimentsComponent } from './layout/experiments/experiments.component';
-<<<<<<< HEAD
-=======
-import { AboutComponent } from './about/about.component';
->>>>>>> a67e40f (about component added)
-
+import {VarificationModule } from './varification/varification.module';
 
 
 @NgModule({
@@ -44,16 +40,11 @@ import { AboutComponent } from './about/about.component';
     UploaderComponent,
     HomepageComponent,
     ProductdetailsComponent,
-<<<<<<< HEAD
   CartComponent
-=======
-  CartComponent,
-  AboutComponent
->>>>>>> a67e40f (about component added)
   ],
   imports: [
     BrowserModule,
-    
+    VarificationModule,
     AppRoutingModule,
     FormsModule,ReactiveFormsModule
    

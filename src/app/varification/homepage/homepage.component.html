@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script>
+      // Prevent dropdown menu from closing when click inside the form
+      $(document).on("click", ".action-buttons .dropdown-menu", function (e) {
+        e.stopPropagation();
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div
+        id="navbarCollapse"
+        class="collapse navbar-collapse justify-content-center"
+      >
+        <div class=" nav flex-column">
+          <div class="dropdown">
+            <a
+              routerLink="/home"
+              routerLinkActive="active"
+              data-toggle="dropdown"
+              class="nav-item nav-link dropdown-toggle"
+              >Projects</a
+            >
+            <div class="dropdown-content">
+              <a routerLink="/projects" routerLinkActive="active"
+                >All Project</a
+              >
+              <a routerLink="/projects" routerLinkActive="active"
+                >New Project</a
+              >
+              <a routerLink="/projects" routerLinkActive="active"
+                >Verified Project</a
+              >
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a
+              routerLink="/projects"
+              routerLinkActive="active"
+              data-toggle="dropdown"
+              class="nav-item nav-link dropdown-toggle"
+              >Books & Notes</a
+            >
+            <div class="dropdown-content">
+              <div class="dropdown-submenu">
+                <a
+                  data-toggle="dropdown"
+                  class="nav-item nav-link dropdown-toggle"
+                  >Books</a
+                >
+                <div class="dropdown-menu">
+                  <a routerLink="/projects" routerLinkActive="active"
+                    >All Books</a
+                  >
+                  <a routerLink="/projects" routerLinkActive="active"
+                    >New Books</a
+                  >
+                  <a routerLink="/projects" routerLinkActive="active"
+                    >Verified Books</a
+                  >
+                </div>
+              </div>
+
+              <div class="dropdown-submenu">
+                <a
+                  data-toggle="dropdown"
+                  class="nav-item nav-link dropdown-toggle"
+                  >Notes</a
+                >
+                <div class="dropdown-menu">
+                  <a routerLink="/projects" routerLinkActive="active"
+                    >All Notes</a
+                  >
+                  <a routerLink="/projects" routerLinkActive="active"
+                    >New Notes</a
+                  >
+                  <a routerLink="/projects" routerLinkActive="active"
+                    >Verified Notes</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a
+              routerLink="/home"
+              routerLinkActive="active"
+              data-toggle="dropdown"
+              class="nav-item nav-link dropdown-toggle"
+              >Article</a
+            >
+            <div class="dropdown-content">
+              <a routerLink="/projects" routerLinkActive="active"
+                >All Article</a
+              >
+              <a routerLink="/projects" routerLinkActive="active"
+                >New Article</a
+              >
+              <a routerLink="/projects" routerLinkActive="active"
+                >Verified Article</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-nav ml-auto action-buttons">
+        <div >
+          <a
+            routerLink=""
+            routerLinkActive="active"
+            class="btn btn-primary "
+            >Logout</a
+          >
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
